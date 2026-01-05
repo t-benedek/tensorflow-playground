@@ -1,0 +1,20 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    dependencies {
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.1'
+        classpath 'de.undercouch:gradle-download-task:4.1.2'
+    }
+}
+
+
+plugins {
+    id 'com.android.library' version '8.5.2' // Für Library-Module
+    // id 'com.android.application' version '8.5.2' // Für App-Module, alternativ aktivieren
+    id 'org.jetbrains.kotlin.android' version '1.9.24'
+}
+
+android {
+    namespace "org.tensorflow.lite.examples.poseestimation"
+    compileSdk 35
+}
+
